@@ -8,7 +8,7 @@ int
 main(int argc, char *argv[])
 {
 	constexpr std::array str{ "chipi", "chapa", "dubi", "daba", };
-	constexpr std::array correct{ 1, 2, 3, 4, };
+	constexpr std::array correct{ 0, 1, 2, 3, };
 	std::array index(correct);
 
 	std::random_device sgen;
