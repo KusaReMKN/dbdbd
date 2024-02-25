@@ -7,12 +7,11 @@ CXXFLAGS=\
 	-O2 -std=c++17
 RM=	rm -f
 
-.PNONY: all clean
-
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
 	$(CXX) -o $(TARGET) $(OBJS)
 
+.PNONY: clean
 clean:
 	$(RM) $(TARGET) $(OBJS)
